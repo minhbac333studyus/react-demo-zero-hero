@@ -1,6 +1,4 @@
 import {mockData} from "../utilities";
-import Address from "./Address";
-
 const Body = () => {
 
     return (
@@ -23,9 +21,6 @@ const Body = () => {
                             <td>{user.id}</td>
                             <td>{user.name}</td>
                             <td>{user.age}</td>
-                            <td>
-                                <Address/>
-                            </td>
                         </tr>
                     );
                 })}
