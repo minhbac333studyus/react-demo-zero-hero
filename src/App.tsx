@@ -4,6 +4,9 @@ import DemoComponent from "./DemoComponent";
 import DemoComponentWithIndustrySyntax from "./DemoComponentWithIndustrySyntax";
 import Header from "./component/Header";
 import Body from "./component/Body";
+import About from "./component/About";
+import Contact from "./component/Contact";
+import {Outlet} from "react-router-dom";
 
 function App() {
   return (
@@ -12,8 +15,7 @@ function App() {
          <DemoComponent name = "Minh" />
           <DemoComponentWithIndustrySyntax name={"Son"} />
           <Header />
-          <Body />
-
+          <Outlet/>
       </header>
     </div>
   );
